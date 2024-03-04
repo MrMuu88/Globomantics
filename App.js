@@ -4,6 +4,7 @@ import HomeScreen from './app/views/HomeScreen.js';
 import AboutScreen from './app/views/About.js';
 import RegisterScreen from './app/views/Registration.js';
 import LoginScreen from './app/views/Login.js';
+import GloboHeader from './app/components/Header.js';
 
 
 const Stack = createNativeStackNavigator();
@@ -11,26 +12,27 @@ const Stack = createNativeStackNavigator();
 const App = () => {
   return (
     <NavigationContainer>
-      <Stack.Navigator initialRouteName='Login'>
+      <Stack.Navigator initialRouteName='Home'>
+
+        <Stack.Screen
+          name='Home'
+          component={HomeScreen}
+          options={{ header: GloboHeader }}
+        />
         <Stack.Screen
           name='Login'
           component={LoginScreen}
-          options={{ title: 'Login' }}
+          options={{ title: 'Login', headerShown: false }}
         />
         <Stack.Screen
           name='Register'
           component={RegisterScreen}
-          options={{ title: 'Register' }}
+          options={{ title: 'Register', headerShown: false }}
         />
         <Stack.Screen
           name='About'
           component={AboutScreen}
           options={{ title: 'About' }}
-        />
-        <Stack.Screen
-          name='Home'
-          component={HomeScreen}
-          options={{ title: 'Home' }}
         />
       </Stack.Navigator>
     </NavigationContainer>

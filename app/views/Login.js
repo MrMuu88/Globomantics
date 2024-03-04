@@ -25,7 +25,7 @@ const LoginScreen = ({ navigation }) => {
                 Alert.alert("incorrect username or password");
                 return;
             }
-            Alert.alert("Succesfully Logged in");
+            AsyncStorage.setItem('userLoggedIn', userName);
             navigation.navigate('Home');
         });
 
