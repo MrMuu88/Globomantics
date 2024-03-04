@@ -21,8 +21,8 @@ const AboutScreen = () => {
 const styles = StyleSheet.create({
     container: { paddingTop: 20 },
     pics: { height: 300 },
-    aboutTitle: { paddingTop: 10, textAlign: 'center' },
-    aboutText: { paddingBottom: 20, paddingLeft: 10, paddingRight: 10 }
+    aboutTitle: { color: '#000000', paddingTop: 10, textAlign: 'center' },
+    aboutText: { color: '#000000', paddingBottom: 20, paddingLeft: 10, paddingRight: 10 }
 });
 
 export default AboutScreen;

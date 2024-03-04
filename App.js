@@ -5,6 +5,7 @@ import AboutScreen from './app/views/About.js';
 import RegisterScreen from './app/views/Registration.js';
 import LoginScreen from './app/views/Login.js';
 import GloboHeader from './app/components/Header.js';
+import ComingSoonScreen from './app/views/ComingSoon.js';
 
 
 const Stack = createNativeStackNavigator();
@@ -28,6 +29,18 @@ const App = () => {
           name='Register'
           component={RegisterScreen}
           options={{ title: 'Register', headerShown: false }}
+        />
+        <Stack.Screen
+          name='Lessons'
+          component={ComingSoonScreen}
+        />
+        <Stack.Screen
+          name='Quiz'
+          component={ComingSoonScreen}
+        />
+        <Stack.Screen
+          name='Blog'
+          component={ComingSoonScreen}
         />
         <Stack.Screen
           name='About'
