@@ -55,6 +55,7 @@ const RegisterScreen = ({ navigation }) => {
             <TouchableHighlight onPress={cacelRegister} underlayColor='#000000'>
                 <Text style={styles.buttons}>cancel</Text>
             </TouchableHighlight>
+
         </View>
     );
 };
